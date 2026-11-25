@@ -1,0 +1,1365 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIKERA - 12 Frame Figma Artboard (393x852 px)</title>
+    <style>
+        /* Reset & Base Editorial Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+            background-color: #EAE9E4;
+            color: #111827;
+            width: 5400px;
+            min-height: 1020px;
+            overflow-x: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 5400px Horizontal Figma Artboard Container */
+        .figma-artboard {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 60px;
+            padding: 60px;
+            width: 5400px;
+            background-color: #EAE9E4;
+        }
+
+        .frame-column {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            width: 393px;
+            flex-shrink: 0;
+        }
+
+        .frame-label {
+            font-size: 14px;
+            font-weight: 700;
+            color: #4B5563;
+            letter-spacing: -0.01em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .frame-dim {
+            font-size: 11px;
+            font-weight: 500;
+            color: #6B7280;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        /* Exact iPhone 16 Screen Frame: 393 x 852 px */
+        .screen-frame {
+            width: 393px;
+            height: 852px;
+            background-color: #F8F8F6;
+            border: 1px solid #DCDAD3;
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        /* Minimalist iOS Status Bar */
+        .status-bar {
+            height: 44px;
+            padding: 12px 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .status-time {
+            font-size: 13px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .status-icons {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #111827;
+        }
+
+        /* App Header Bars */
+        .app-header-home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px 12px;
+            border-bottom: 1px solid #E6E5E0;
+        }
+
+        .brand-logo {
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .brand-hi {
+            color: #D96B27;
+        }
+
+        .brand-kera {
+            color: #111827;
+        }
+
+        .app-header-sub {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px 12px;
+            border-bottom: 1px solid #E6E5E0;
+        }
+
+        .header-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #111827;
+        }
+
+        .icon-btn {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            border: 1px solid #E6E5E0;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111827;
+        }
+
+        /* Frame Main Content Area */
+        .frame-body {
+            flex: 1;
+            padding: 14px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+
+        /* Reusable Minimalist Cards & Buttons */
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #E6E5E0;
+            border-radius: 16px;
+            padding: 14px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 13px 16px;
+            border-radius: 999px;
+            background-color: #D96B27;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .btn-dark {
+            width: 100%;
+            padding: 13px 16px;
+            border-radius: 999px;
+            background-color: #111827;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .btn-pine {
+            width: 100%;
+            padding: 13px 16px;
+            border-radius: 999px;
+            background-color: #2E4A3E;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .btn-outline {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 999px;
+            background-color: #FFFFFF;
+            border: 1px solid #E6E5E0;
+            color: #111827;
+            font-size: 13px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .badge-pine {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 999px;
+            background-color: #ECF2EF;
+            color: #2E4A3E;
+            font-size: 10.5px;
+            font-weight: 600;
+        }
+
+        .badge-terracotta {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 999px;
+            background-color: #FDF2EC;
+            color: #D96B27;
+            font-size: 10.5px;
+            font-weight: 600;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 11px 14px;
+            border-radius: 12px;
+            background-color: #FFFFFF;
+            border: 1px solid #E6E5E0;
+            font-size: 12.5px;
+            color: #111827;
+        }
+
+        /* Bottom Navigation Bar (Frames 03, 04, 05, 11, 12) */
+        .bottom-nav-area {
+            padding: 0 16px 16px;
+            flex-shrink: 0;
+        }
+
+        .bottom-nav {
+            background-color: #FFFFFF;
+            border: 1px solid #E6E5E0;
+            border-radius: 20px;
+            padding: 7px 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-tab {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            padding: 5px 4px;
+            border-radius: 13px;
+            font-size: 10px;
+            font-weight: 500;
+            color: #6B7280;
+        }
+
+        .nav-tab.active {
+            background-color: #FDF2EC;
+            color: #D96B27;
+            font-weight: 600;
+        }
+
+        .home-bar-only {
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .home-pill {
+            width: 128px;
+            height: 4px;
+            border-radius: 999px;
+            background-color: #111827;
+            opacity: 0.25;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="figma-artboard">
+
+        <!-- ========================================================= -->
+        <!-- FRAME 01: SPLASH SCREEN                                   -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>01 - Splash</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div class="status-bar">
+                    <span class="status-time">9:41</span>
+                    <div class="status-icons">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding: 24px 24px 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="badge-pine">Outdoor Gear Rental</span>
+                        <span style="font-size: 11px; color: #6B7280;">Basecamp Temanggung</span>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div style="width: 132px; height: 132px; margin: 0 auto 22px; border-radius: 34px; background: #FFFFFF; border: 1px solid #E6E5E0; display: flex; align-items: center; justify-content: center;">
+                            <svg width="74" height="74" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8 48L25 20l11 17 7-10 13 21H8z" stroke="#111827" stroke-width="2.5"/>
+                                <path d="M25 20l5 8-4 4-4-4 3-8z" fill="#D96B27"/>
+                                <circle cx="46" cy="16" r="4" stroke="#D96B27" stroke-width="2.2"/>
+                            </svg>
+                        </div>
+                        <div style="font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 10px;">
+                            <span class="brand-hi">HI</span><span class="brand-kera">KERA</span>
+                        </div>
+                        <p style="font-size: 13.5px; line-height: 1.55; color: #6B7280; max-width: 255px; margin: 0 auto;">
+                            Sewa alat gunung &amp; camping terawat. Higienis, lengkap, siap menemani perjalanan alammu.
+                        </p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="btn-primary">Mulai Jelajah</div>
+                        <div class="btn-outline">Masuk atau Daftar</div>
+                    </div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 02: LOGIN / DAFTAR                                  -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>02 - Login</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div class="status-bar">
+                    <span class="status-time">9:41</span>
+                    <div class="status-icons">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding: 12px 22px 20px;">
+                    <div>
+                        <div class="icon-btn" style="margin-bottom: 22px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+
+                        <div class="brand-logo" style="font-size: 20px; margin-bottom: 6px;">
+                            <span class="brand-hi">HI</span><span class="brand-kera">KERA</span>
+                        </div>
+                        <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px;">Selamat datang</div>
+                        <p style="font-size: 13px; color: #6B7280; margin-bottom: 24px;">Masuk untuk memantau jadwal sewa dan e-tiket pengambilan alat.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 14px;">
+                            <div>
+                                <div style="font-size: 11.5px; font-weight: 600; margin-bottom: 6px;">Email atau Nomor WhatsApp</div>
+                                <div class="input-box">dzakwan.outdoor@gmail.com</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 11.5px; font-weight: 600; margin-bottom: 6px;">Kata Sandi</div>
+                                <div class="input-box" style="color: #6B7280;">••••••••••••</div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 12px;">
+                                <span style="color: #6B7280;">Ingat perangkat ini</span>
+                                <span style="color: #D96B27; font-weight: 600;">Lupa sandi?</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="btn-primary">Masuk ke Akun</div>
+                        <div class="btn-outline">Daftar Akun Baru</div>
+                    </div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 03: HOME (MATCHES USER'S FIGMA PAGE 1)              -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>03 - Home</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Custom Figma Header: Hamburger Left + HIKERA Right + Thin Divider -->
+                    <div class="app-header-home">
+                        <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round">
+                                <line x1="4" y1="7" x2="20" y2="7"/>
+                                <line x1="4" y1="12" x2="16" y2="12"/>
+                                <line x1="4" y1="17" x2="20" y2="17"/>
+                            </svg>
+                        </div>
+                        <div class="brand-logo">
+                            <span class="brand-hi">HI</span><span class="brand-kera">KERA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame-body">
+                    <!-- Large Rounded Banner Card (Matches gray box in user's Figma) -->
+                    <div style="background: #E7E4DC; border: 1px solid #D8D4CA; border-radius: 18px; padding: 18px; position: relative; overflow: hidden;">
+                        <span class="badge-pine" style="background: rgba(255,255,255,0.85); margin-bottom: 8px;">Promo Akhir Pekan</span>
+                        <div style="font-size: 18px; font-weight: 700; line-height: 1.25; color: #111827; max-width: 220px; margin-bottom: 6px;">
+                            Paket Mendaki Akhir Pekan
+                        </div>
+                        <p style="font-size: 12px; color: #4B5563; max-width: 215px; line-height: 1.45; margin-bottom: 10px;">
+                            Diskon 20% sewa Tenda 2P + Carrier + Kompor. Gratis matras foil.
+                        </p>
+                        <span style="font-size: 11px; font-weight: 700; color: #2E4A3E;">Kode: SUMMIT20</span>
+                        <svg width="88" height="66" viewBox="0 0 96 72" fill="none" style="position: absolute; right: 10px; bottom: 8px; opacity: 0.28;">
+                            <path d="M8 64L36 18l18 28 12-16 22 34H8z" stroke="#111827" stroke-width="2.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <!-- Two Side-by-Side Pill CTA Buttons (Matches Orange & Dark Navy pills in Figma) -->
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <div style="flex: 1; padding: 12px 10px; border-radius: 999px; background: #D96B27; color: #FFFFFF; font-size: 12.5px; font-weight: 600; text-align: center;">
+                            Sewa Satuan
+                        </div>
+                        <div style="flex: 1; padding: 12px 10px; border-radius: 999px; background: #111827; color: #FFFFFF; font-size: 12.5px; font-weight: 600; text-align: center;">
+                            Paket Camping
+                        </div>
+                    </div>
+
+                    <!-- Quick Category Row -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-size: 13px; font-weight: 700;">Kategori Populer</span>
+                            <span style="font-size: 11.5px; font-weight: 600; color: #D96B27;">Lihat Semua</span>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 8px;">
+                            <div class="card" style="flex: 1; padding: 10px 6px; text-align: center;">
+                                <div style="width: 32px; height: 32px; margin: 0 auto 6px; border-radius: 10px; background: #F1F0EC; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><path d="M3 19L12 5l9 14H3z"/><path d="M12 5v14"/></svg>
+                                </div>
+                                <div style="font-size: 11px; font-weight: 600;">Tenda</div>
+                            </div>
+                            <div class="card" style="flex: 1; padding: 10px 6px; text-align: center;">
+                                <div style="width: 32px; height: 32px; margin: 0 auto 6px; border-radius: 10px; background: #F1F0EC; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><rect x="6" y="4" width="12" height="16" rx="4"/><path d="M9 4V2h6v2"/></svg>
+                                </div>
+                                <div style="font-size: 11px; font-weight: 600;">Carrier</div>
+                            </div>
+                            <div class="card" style="flex: 1; padding: 10px 6px; text-align: center;">
+                                <div style="width: 32px; height: 32px; margin: 0 auto 6px; border-radius: 10px; background: #F1F0EC; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><path d="M12 3c2 3 5 5.5 5 9a5 5 0 11-10 0c0-2.2 1.2-4 3-5.5 0 2 1.5 3 2 3z"/></svg>
+                                </div>
+                                <div style="font-size: 11px; font-weight: 600;">Masak</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alat Rekomendasi -->
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <div style="font-size: 13px; font-weight: 700;">Rekomendasi Minggu Ini</div>
+                        <div class="card" style="padding: 11px 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-size: 12.5px; font-weight: 600;">Tenda Eiger Guardian 2P</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">Rp 45.000 / hari</div>
+                            </div>
+                            <span class="badge-pine">Tersedia</span>
+                        </div>
+                        <div class="card" style="padding: 11px 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-size: 12.5px; font-weight: 600;">Carrier Osprey Atmos 65L</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">Rp 55.000 / hari</div>
+                            </div>
+                            <span class="badge-pine">Tersedia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Nav Bar (Active: Beranda) -->
+                <div class="bottom-nav-area">
+                    <div class="bottom-nav">
+                        <div class="nav-tab active">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+                            <span>Beranda</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            <span>Kategori</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            <span>Sewaanku</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-3.8 5-5 8-5s6.2 1.2 8 5"/></svg>
+                            <span>Profil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 04: KATEGORI (MATCHES USER'S FIGMA PAGE 2)          -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>04 - Kategori</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">KATEGORI</span>
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame-body">
+                    <p style="font-size: 12.5px; color: #6B7280;">Pilih kategori perlengkapan pendakian yang kamu butuhkan.</p>
+
+                    <!-- 2x3 Minimalist Category Grid -->
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="display: flex; flex-direction: row; gap: 10px;">
+                            <div class="card" style="flex: 1; padding: 15px 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 11px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><path d="M3 19L12 5l9 14H3z"/><path d="M12 5v14"/></svg>
+                                </div>
+                                <div style="font-size: 13.5px; font-weight: 700;">Tenda</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">14 unit ready</div>
+                            </div>
+                            <div class="card" style="flex: 1; padding: 15px 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 11px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><rect x="6" y="4" width="12" height="16" rx="4"/><path d="M9 4V2h6v2"/><path d="M6 11h12"/></svg>
+                                </div>
+                                <div style="font-size: 13.5px; font-weight: 700;">Carrier</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">19 unit ready</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: row; gap: 10px;">
+                            <div class="card" style="flex: 1; padding: 15px 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 11px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><path d="M4 17h16v2H4z"/><path d="M6 17V9l5 3h5a3 3 0 013 3v2"/></svg>
+                                </div>
+                                <div style="font-size: 13.5px; font-weight: 700;">Sepatu &amp; Trek</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">12 unit ready</div>
+                            </div>
+                            <div class="card" style="flex: 1; padding: 15px 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 11px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><path d="M12 3c2 3 5 5.5 5 9a5 5 0 11-10 0c0-2.2 1.2-4 3-5.5 0 2 1.5 3 2 3z"/></svg>
+                                </div>
+                                <div style="font-size: 13.5px; font-weight: 700;">Alat Masak</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">22 unit ready</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: row; gap: 10px;">
+                            <div class="card" style="flex: 1; padding: 15px 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 11px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><circle cx="12" cy="11" r="4"/><path d="M12 3v2M12 17v4M5 11H3M21 11h-2"/></svg>
+                                </div>
+                                <div style="font-size: 13.5px; font-weight: 700;">Penerangan</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">16 unit ready</div>
+                            </div>
+                            <div class="card" style="flex: 1; padding: 15px 14px;">
+                                <div style="width: 36px; height: 36px; border-radius: 11px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="1.8"><rect x="5" y="4" width="14" height="16" rx="5"/><path d="M5 10h14"/></svg>
+                                </div>
+                                <div style="font-size: 13.5px; font-weight: 700;">Sleeping Bag</div>
+                                <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">18 unit ready</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bundle Promo Card -->
+                    <div style="background: #ECF2EF; border: 1px solid #D4E1DA; border-radius: 16px; padding: 14px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                        <div>
+                            <div style="font-size: 10px; font-weight: 700; color: #2E4A3E;">HEMAT 20%</div>
+                            <div style="font-size: 13px; font-weight: 700; margin-top: 2px;">Paket Summit 2 Orang</div>
+                            <div style="font-size: 11px; color: #4B5563; margin-top: 2px;">Tenda 2P + 2 Sleeping Bag + Kompor</div>
+                        </div>
+                        <div style="padding: 8px 14px; border-radius: 999px; background: #2E4A3E; color: #FFFFFF; font-size: 11.5px; font-weight: 600;">
+                            Pilih
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Nav Bar (Active: Kategori) -->
+                <div class="bottom-nav-area">
+                    <div class="bottom-nav">
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+                            <span>Beranda</span>
+                        </div>
+                        <div class="nav-tab active">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            <span>Kategori</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            <span>Sewaanku</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-3.8 5-5 8-5s6.2 1.2 8 5"/></svg>
+                            <span>Profil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 05: KATALOG ALAT                                    -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>05 - Katalog</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">KATALOG ALAT</span>
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame-body">
+                    <div class="input-box" style="color: #6B7280; display: flex; align-items: center; gap: 8px;">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+                        <span>Cari tenda, carrier, sepatu...</span>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; gap: 6px;">
+                        <span style="padding: 6px 12px; border-radius: 999px; background: #111827; color: #FFFFFF; font-size: 11px; font-weight: 600;">Semua</span>
+                        <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E6E5E0; color: #6B7280; font-size: 11px; font-weight: 600;">Tenda</span>
+                        <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E6E5E0; color: #6B7280; font-size: 11px; font-weight: 600;">Carrier</span>
+                        <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E6E5E0; color: #6B7280; font-size: 11px; font-weight: 600;">Masak</span>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="card" style="padding: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div style="width: 48px; height: 48px; border-radius: 12px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;">TENDA</div>
+                                <div>
+                                    <div style="font-size: 13px; font-weight: 700;">Tenda Eiger Guardian 2P</div>
+                                    <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">2–3 Orang &bull; 2.4 kg</div>
+                                    <div style="font-size: 12px; font-weight: 700; color: #D96B27; margin-top: 3px;">Rp 45.000 <span style="font-weight: 400; color: #6B7280;">/ hari</span></div>
+                                </div>
+                            </div>
+                            <span class="badge-pine">Tersedia</span>
+                        </div>
+
+                        <div class="card" style="padding: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div style="width: 48px; height: 48px; border-radius: 12px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;">TAS</div>
+                                <div>
+                                    <div style="font-size: 13px; font-weight: 700;">Carrier Osprey Atmos 65L</div>
+                                    <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">65 Liter &bull; 1.9 kg</div>
+                                    <div style="font-size: 12px; font-weight: 700; color: #D96B27; margin-top: 3px;">Rp 55.000 <span style="font-weight: 400; color: #6B7280;">/ hari</span></div>
+                                </div>
+                            </div>
+                            <span class="badge-pine">Tersedia</span>
+                        </div>
+
+                        <div class="card" style="padding: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div style="width: 48px; height: 48px; border-radius: 12px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;">TREK</div>
+                                <div>
+                                    <div style="font-size: 13px; font-weight: 700;">Sepatu Salomon X Ultra 4</div>
+                                    <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">Size 40–44 &bull; 780 gr</div>
+                                    <div style="font-size: 12px; font-weight: 700; color: #D96B27; margin-top: 3px;">Rp 40.000 <span style="font-weight: 400; color: #6B7280;">/ hari</span></div>
+                                </div>
+                            </div>
+                            <span class="badge-pine">Tersedia</span>
+                        </div>
+
+                        <div class="card" style="padding: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div style="width: 48px; height: 48px; border-radius: 12px; background: #F1F0EC; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;">MASAK</div>
+                                <div>
+                                    <div style="font-size: 13px; font-weight: 700;">Kompor + Nesting Set</div>
+                                    <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">2–4 Orang &bull; 620 gr</div>
+                                    <div style="font-size: 12px; font-weight: 700; color: #D96B27; margin-top: 3px;">Rp 25.000 <span style="font-weight: 400; color: #6B7280;">/ hari</span></div>
+                                </div>
+                            </div>
+                            <span class="badge-pine">Tersedia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Nav Bar (Active: Kategori) -->
+                <div class="bottom-nav-area">
+                    <div class="bottom-nav">
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+                            <span>Beranda</span>
+                        </div>
+                        <div class="nav-tab active">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            <span>Kategori</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            <span>Sewaanku</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-3.8 5-5 8-5s6.2 1.2 8 5"/></svg>
+                            <span>Profil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 06: DETAIL ALAT                                     -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>06 - Detail Alat</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">DETAIL ALAT</span>
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding-bottom: 18px;">
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="height: 190px; border-radius: 18px; background: #F1F0EC; border: 1px solid #E6E5E0; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+                            <span class="badge-pine" style="position: absolute; top: 12px; right: 12px;">Unit Ready &bull; Steril</span>
+                            <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#111827" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10 48L32 14l22 34H10z"/>
+                                <path d="M32 14v34"/>
+                            </svg>
+                            <span style="font-size: 11px; color: #6B7280; margin-top: 6px;">Kategori: Tenda Gunung</span>
+                        </div>
+
+                        <div>
+                            <div style="font-size: 20px; font-weight: 700; line-height: 1.25;">Tenda Eiger Guardian 2P</div>
+                            <div style="font-size: 16px; font-weight: 800; color: #D96B27; margin-top: 6px;">
+                                Rp 45.000 <span style="font-size: 12px; font-weight: 500; color: #6B7280;">/ 24 jam</span>
+                            </div>
+                            <p style="font-size: 12.5px; line-height: 1.55; color: #6B7280; margin-top: 8px;">
+                                Tenda double-layer tahan hujan deras dengan sirkulasi udara optimal untuk pendakian gunung tropis.
+                            </p>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div style="display: flex; flex-direction: row; gap: 8px;">
+                                <div class="card" style="flex: 1; padding: 11px 12px;">
+                                    <div style="font-size: 10.5px; color: #6B7280;">Kapasitas</div>
+                                    <div style="font-size: 13px; font-weight: 700; margin-top: 2px;">2–3 Orang</div>
+                                </div>
+                                <div class="card" style="flex: 1; padding: 11px 12px;">
+                                    <div style="font-size: 10.5px; color: #6B7280;">Berat Bersih</div>
+                                    <div style="font-size: 13px; font-weight: 700; margin-top: 2px;">2.4 kg</div>
+                                </div>
+                            </div>
+                            <div class="card" style="padding: 11px 12px;">
+                                <div style="font-size: 10.5px; color: #6B7280;">Kelengkapan dalam Paket</div>
+                                <div style="font-size: 12.5px; font-weight: 600; margin-top: 2px;">Frame Alloy, Pasak 12x, Flysheet Waterproof</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-primary">Pilih Tanggal Sewa</div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 07: ATUR JADWAL & DURASI                            -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>07 - Atur Jadwal</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">ATUR JADWAL</span>
+                        <div style="width: 34px;"></div>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding-bottom: 18px;">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div class="card">
+                            <div style="font-size: 12px; font-weight: 700; margin-bottom: 8px;">Tanggal Mulai Sewa</div>
+                            <div class="input-box" style="display: flex; justify-content: space-between; align-items: center;">
+                                <span>28 November 2026</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span style="font-size: 12px; font-weight: 700;">Durasi Sewa</span>
+                                <span class="badge-terracotta">3 Hari</span>
+                            </div>
+                            <div style="display: flex; flex-direction: row; gap: 8px; margin-bottom: 8px;">
+                                <div style="flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #E6E5E0; text-align: center; font-size: 12px; font-weight: 600;">1 Hari</div>
+                                <div style="flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #E6E5E0; text-align: center; font-size: 12px; font-weight: 600;">2 Hari</div>
+                                <div style="flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #D96B27; background: #FDF2EC; color: #D96B27; text-align: center; font-size: 12px; font-weight: 700;">3 Hari</div>
+                            </div>
+                            <div style="display: flex; flex-direction: row; gap: 8px;">
+                                <div style="flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #E6E5E0; text-align: center; font-size: 12px; font-weight: 600;">4 Hari</div>
+                                <div style="flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #E6E5E0; text-align: center; font-size: 12px; font-weight: 600;">5 Hari</div>
+                                <div style="flex: 1; padding: 10px; border-radius: 12px; border: 1px solid #E6E5E0; text-align: center; font-size: 12px; font-weight: 600;">7 Hari</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div style="font-size: 12px; font-weight: 700; margin-bottom: 10px;">Metode Pengambilan</div>
+                            <div style="display: flex; flex-direction: row; gap: 8px;">
+                                <div style="flex: 1; padding: 12px 10px; border-radius: 14px; background: #111827; color: #FFFFFF;">
+                                    <div style="font-size: 12px; font-weight: 700;">Ambil di Basecamp</div>
+                                    <div style="font-size: 10.5px; opacity: 0.8; margin-top: 2px;">Gratis &bull; Cek alat</div>
+                                </div>
+                                <div style="flex: 1; padding: 12px 10px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E6E5E0;">
+                                    <div style="font-size: 12px; font-weight: 700;">Antar Kurir</div>
+                                    <div style="font-size: 10.5px; color: #6B7280; margin-top: 2px;">+Rp 15.000 area kota</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-size: 11px; color: #6B7280;">Estimasi Total (3 hari)</div>
+                                <div style="font-size: 17px; font-weight: 800;">Rp 210.000</div>
+                            </div>
+                            <span class="badge-pine">Basecamp</span>
+                        </div>
+                        <div class="btn-primary">Simpan Jadwal &amp; Keranjang</div>
+                    </div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 08: KERANJANG SEWA                                  -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>08 - Keranjang</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">KERANJANG SEWA</span>
+                        <div style="width: 34px;"></div>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding-bottom: 18px;">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="padding: 9px 12px; border-radius: 12px; background: #ECF2EF; color: #2E4A3E; font-size: 11.5px; font-weight: 600; display: flex; justify-content: space-between;">
+                            <span>Mulai: 28 Nov 2026</span>
+                            <span>Durasi: 3 Hari</span>
+                        </div>
+
+                        <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-size: 13px; font-weight: 700;">Tenda Eiger Guardian 2P</div>
+                                <div style="font-size: 11.5px; color: #D96B27; font-weight: 600; margin-top: 2px;">Rp 45.000 / hari</div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px; background: #F1F0EC; padding: 4px 8px; border-radius: 999px;">
+                                <span style="width: 20px; height: 20px; border-radius: 50%; background: #FFF; text-align: center; font-size: 12px; font-weight: 700; line-height: 20px;">-</span>
+                                <span style="font-size: 12px; font-weight: 700;">1</span>
+                                <span style="width: 20px; height: 20px; border-radius: 50%; background: #FFF; text-align: center; font-size: 12px; font-weight: 700; line-height: 20px;">+</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-size: 13px; font-weight: 700;">Kompor Portable + Nesting</div>
+                                <div style="font-size: 11.5px; color: #D96B27; font-weight: 600; margin-top: 2px;">Rp 25.000 / hari</div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px; background: #F1F0EC; padding: 4px 8px; border-radius: 999px;">
+                                <span style="width: 20px; height: 20px; border-radius: 50%; background: #FFF; text-align: center; font-size: 12px; font-weight: 700; line-height: 20px;">-</span>
+                                <span style="font-size: 12px; font-weight: 700;">1</span>
+                                <span style="width: 20px; height: 20px; border-radius: 50%; background: #FFF; text-align: center; font-size: 12px; font-weight: 700; line-height: 20px;">+</span>
+                            </div>
+                        </div>
+
+                        <div style="font-size: 12px; font-weight: 600; color: #D96B27; margin-top: 2px;">+ Tambah alat lainnya</div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div class="card" style="display: flex; flex-direction: column; gap: 6px; font-size: 12px;">
+                            <div style="display: flex; justify-content: space-between; color: #6B7280;">
+                                <span>Tarif Harian (2 item)</span>
+                                <span>Rp 70.000</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; color: #6B7280;">
+                                <span>Durasi &times; 3 Hari</span>
+                                <span>Rp 210.000</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; color: #6B7280;">
+                                <span>Pengambilan (Basecamp)</span>
+                                <span>Gratis</span>
+                            </div>
+                            <div style="border-top: 1px solid #E6E5E0; padding-top: 8px; margin-top: 2px; display: flex; justify-content: space-between; font-size: 14.5px; font-weight: 800;">
+                                <span>Total Bayar</span>
+                                <span>Rp 210.000</span>
+                            </div>
+                        </div>
+                        <div class="btn-primary">Lanjut Checkout</div>
+                    </div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 09: CHECKOUT & JAMINAN                              -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>09 - Checkout</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">CHECKOUT</span>
+                        <div style="width: 34px;"></div>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding-bottom: 18px;">
+                    <div style="display: flex; flex-direction: column; gap: 11px;">
+                        <div class="card">
+                            <div style="font-size: 11px; color: #6B7280;">Data Penyewa</div>
+                            <div style="font-size: 13.5px; font-weight: 700; margin-top: 2px;">Dzakwan &bull; 0812-3456-7890</div>
+                            <div style="font-size: 11.5px; color: #6B7280; margin-top: 2px;">Ambil: 28 Nov 2026 (3 Hari)</div>
+                        </div>
+
+                        <div class="card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <span style="font-size: 12px; font-weight: 700;">Identitas Jaminan Sewa</span>
+                                <span class="badge-pine">Terunggah</span>
+                            </div>
+                            <div style="display: flex; flex-direction: row; gap: 8px; margin-bottom: 8px;">
+                                <div style="flex: 1; padding: 8px; border-radius: 10px; border: 1px solid #D96B27; background: #FDF2EC; color: #D96B27; font-size: 11.5px; font-weight: 700; text-align: center;">KTP</div>
+                                <div style="flex: 1; padding: 8px; border-radius: 10px; border: 1px solid #E6E5E0; font-size: 11.5px; font-weight: 600; text-align: center;">Kartu Pelajar</div>
+                            </div>
+                            <div style="border: 1.5px dashed #C8C5BC; border-radius: 12px; padding: 10px; text-align: center; background: #F8F8F6;">
+                                <div style="font-size: 11.5px; font-weight: 600; color: #2E4A3E;">&#10003; Foto_KTP_Dzakwan.jpg</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div style="font-size: 12px; font-weight: 700; margin-bottom: 8px;">Metode Pembayaran</div>
+                            <div style="display: flex; flex-direction: column; gap: 6px;">
+                                <div style="padding: 10px 12px; border-radius: 11px; border: 1px solid #111827; background: #F1F0EC; font-size: 12px; font-weight: 600; display: flex; justify-content: space-between; align-items: center;">
+                                    <span>QRIS Instan</span>
+                                    <span style="width: 12px; height: 12px; border-radius: 50%; border: 3.5px solid #D96B27;"></span>
+                                </div>
+                                <div style="padding: 10px 12px; border-radius: 11px; border: 1px solid #E6E5E0; font-size: 12px; font-weight: 500; display: flex; justify-content: space-between; align-items: center;">
+                                    <span>Transfer Virtual Account</span>
+                                    <span style="width: 12px; height: 12px; border-radius: 50%; border: 2px solid #D1D5DB;"></span>
+                                </div>
+                                <div style="padding: 10px 12px; border-radius: 11px; border: 1px solid #E6E5E0; font-size: 12px; font-weight: 500; display: flex; justify-content: space-between; align-items: center;">
+                                    <span>Bayar di Basecamp</span>
+                                    <span style="width: 12px; height: 12px; border-radius: 50%; border: 2px solid #D1D5DB;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-primary">Konfirmasi &amp; Bayar (Rp 210.000)</div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 10: PEMBAYARAN & E-TIKET QR                         -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>10 - E-Tiket QR</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-sub">
+                        <div class="icon-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </div>
+                        <span class="header-title">E-TIKET QR</span>
+                        <div style="width: 34px;"></div>
+                    </div>
+                </div>
+
+                <div class="frame-body" style="justify-content: space-between; padding-bottom: 18px;">
+                    <div class="card" style="text-align: center; padding: 22px 18px;">
+                        <span class="badge-pine" style="margin-bottom: 10px;">&#10003; Lunas &bull; Terverifikasi</span>
+                        <div style="font-size: 18px; font-weight: 800;">Booking #HKR-2026-884</div>
+                        <p style="font-size: 12px; color: #6B7280; margin-top: 4px;">
+                            Tunjukkan kode QR ini ke petugas Basecamp HIKERA saat pengambilan alat.
+                        </p>
+
+                        <div style="width: 164px; height: 164px; margin: 18px auto; padding: 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E6E5E0; display: flex; align-items: center; justify-content: center;">
+                            <svg width="132" height="132" viewBox="0 0 100 100" fill="#111827">
+                                <rect x="6" y="6" width="26" height="26" rx="4" fill="none" stroke="#111827" stroke-width="6"/>
+                                <rect x="13" y="13" width="12" height="12" rx="2"/>
+                                <rect x="68" y="6" width="26" height="26" rx="4" fill="none" stroke="#111827" stroke-width="6"/>
+                                <rect x="75" y="13" width="12" height="12" rx="2"/>
+                                <rect x="6" y="68" width="26" height="26" rx="4" fill="none" stroke="#111827" stroke-width="6"/>
+                                <rect x="13" y="75" width="12" height="12" rx="2"/>
+                                <rect x="42" y="8" width="8" height="8"/>
+                                <rect x="52" y="18" width="8" height="16"/>
+                                <rect x="40" y="38" width="20" height="20" rx="3" fill="#D96B27"/>
+                                <rect x="10" y="44" width="18" height="8"/>
+                                <rect x="70" y="44" width="22" height="8"/>
+                                <rect x="44" y="68" width="12" height="10"/>
+                                <rect x="66" y="68" width="10" height="24"/>
+                                <rect x="82" y="76" width="12" height="16"/>
+                            </svg>
+                        </div>
+
+                        <div style="border-top: 1px dashed #E6E5E0; padding-top: 14px; text-align: left; font-size: 12px; display: flex; flex-direction: column; gap: 6px;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #6B7280;">Jadwal Ambil</span>
+                                <span style="font-weight: 600;">28 Nov 2026, 08:00 WIB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #6B7280;">Durasi &amp; Metode</span>
+                                <span style="font-weight: 600;">3 Hari &bull; Basecamp</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #6B7280;">Jaminan</span>
+                                <span style="font-weight: 600; color: #2E4A3E;">KTP Asli</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-dark">Lihat Status Sewa</div>
+                </div>
+
+                <div class="home-bar-only"><div class="home-pill"></div></div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 11: SEWAANKU (STATUS SEWA)                          -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>11 - Sewaanku</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-home">
+                        <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round">
+                                <line x1="4" y1="7" x2="20" y2="7"/>
+                                <line x1="4" y1="12" x2="16" y2="12"/>
+                                <line x1="4" y1="17" x2="20" y2="17"/>
+                            </svg>
+                        </div>
+                        <div class="brand-logo">
+                            <span class="brand-hi">HI</span><span class="brand-kera">KERA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame-body">
+                    <div style="font-size: 18px; font-weight: 700;">Sewaanku</div>
+
+                    <div style="display: flex; flex-direction: row; gap: 6px; background: #F1F0EC; padding: 4px; border-radius: 13px;">
+                        <div style="flex: 1; padding: 8px; border-radius: 9px; background: #FFFFFF; font-size: 12px; font-weight: 600; text-align: center;">Sedang Disewa</div>
+                        <div style="flex: 1; padding: 8px; border-radius: 9px; color: #6B7280; font-size: 12px; font-weight: 600; text-align: center;">Riwayat</div>
+                    </div>
+
+                    <div class="card" style="border-color: #E3C7B4;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-size: 12px; font-weight: 700;">#HKR-2026-884</span>
+                            <span class="badge-terracotta">Aktif</span>
+                        </div>
+
+                        <div style="background: #FDF2EC; border-radius: 14px; padding: 12px; margin-bottom: 12px;">
+                            <div style="font-size: 11px; color: #D96B27; font-weight: 600;">Sisa waktu pengembalian</div>
+                            <div style="font-size: 18px; font-weight: 800; margin-top: 2px;">1 hari 14 jam 28 menit</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">Kembalikan sebelum pukul 20:00 WIB agar bebas denda.</div>
+                        </div>
+
+                        <div style="font-size: 12px; font-weight: 600; margin-bottom: 5px;">Alat yang dibawa:</div>
+                        <div style="font-size: 12px; color: #6B7280; display: flex; flex-direction: column; gap: 3px; margin-bottom: 14px;">
+                            <div>&bull; Tenda Eiger Guardian 2P (1x)</div>
+                            <div>&bull; Kompor Portable + Nesting (1x)</div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: row; gap: 8px;">
+                            <div class="btn-outline" style="flex: 1; padding: 10px; font-size: 12px;">Perpanjang</div>
+                            <div class="btn-dark" style="flex: 1; padding: 10px; font-size: 12px;">Tunjukkan QR</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Nav Bar (Active: Sewaanku) -->
+                <div class="bottom-nav-area">
+                    <div class="bottom-nav">
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+                            <span>Beranda</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            <span>Kategori</span>
+                        </div>
+                        <div class="nav-tab active">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            <span>Sewaanku</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-3.8 5-5 8-5s6.2 1.2 8 5"/></svg>
+                            <span>Profil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- FRAME 12: PROFIL & BANTUAN                                -->
+        <!-- ========================================================= -->
+        <div class="frame-column">
+            <div class="frame-label">
+                <span>12 - Profil</span>
+                <span class="frame-dim">393 × 852</span>
+            </div>
+            <div class="screen-frame">
+                <div>
+                    <div class="status-bar">
+                        <span class="status-time">9:41</span>
+                        <div class="status-icons">
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="currentColor"><rect x="0" y="6" width="3" height="4" rx="1"/><rect x="4.3" y="4" width="3" height="6" rx="1"/><rect x="8.6" y="2" width="3" height="8" rx="1"/><rect x="13" y="0" width="3" height="10" rx="1"/></svg>
+                            <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><rect x="0.5" y="0.5" width="17" height="9" rx="2" stroke="currentColor"/><rect x="2" y="2" width="13" height="6" rx="1" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="app-header-home">
+                        <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round">
+                                <line x1="4" y1="7" x2="20" y2="7"/>
+                                <line x1="4" y1="12" x2="16" y2="12"/>
+                                <line x1="4" y1="17" x2="20" y2="17"/>
+                            </svg>
+                        </div>
+                        <div class="brand-logo">
+                            <span class="brand-hi">HI</span><span class="brand-kera">KERA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frame-body">
+                    <div class="card" style="display: flex; align-items: center; gap: 14px;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #111827; color: #FFFFFF; font-size: 17px; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+                            DZ
+                        </div>
+                        <div>
+                            <div style="font-size: 16px; font-weight: 700;">Dzakwan</div>
+                            <div style="margin-top: 4px;">
+                                <span class="badge-pine">&#10003; Terverifikasi KTP/Pelajar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <div class="card" style="flex: 1; text-align: center;">
+                            <div style="font-size: 17px; font-weight: 800;">6 Kali</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">Total Pendakian</div>
+                        </div>
+                        <div class="card" style="flex: 1; text-align: center;">
+                            <div style="font-size: 17px; font-weight: 800; color: #2E4A3E;">100%</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">Tepat Waktu</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div style="font-size: 13px; font-weight: 700; margin-bottom: 6px;">Syarat &amp; Ketentuan Denda</div>
+                        <div style="font-size: 11.5px; line-height: 1.5; color: #6B7280; display: flex; flex-direction: column; gap: 5px;">
+                            <div>1. Keterlambatan lebih dari 2 jam dikenakan tarif sewa 1 hari tambahan.</div>
+                            <div>2. Kerusakan ringan dikenakan biaya perbaikan sesuai komponen alat.</div>
+                            <div>3. Identitas asli dikembalikan penuh saat alat dicek lengkap.</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto;">
+                        <div class="btn-pine">Chat Admin WhatsApp</div>
+                        <div class="btn-outline" style="padding: 11px;">Keluar Akun</div>
+                    </div>
+                </div>
+
+                <!-- Bottom Nav Bar (Active: Profil) -->
+                <div class="bottom-nav-area">
+                    <div class="bottom-nav">
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+                            <span>Beranda</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            <span>Kategori</span>
+                        </div>
+                        <div class="nav-tab">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            <span>Sewaanku</span>
+                        </div>
+                        <div class="nav-tab active">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.8-3.8 5-5 8-5s6.2 1.2 8 5"/></svg>
+                            <span>Profil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
